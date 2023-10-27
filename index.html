@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   </head>
@@ -60,15 +60,15 @@
       </section>
       <section class="banner">
         <div class="container">
-          <div class="owl-carousel owl-theme banner-carousel">
-            <div class="item">
+          <div class="banner-slider">
+            <div>
               <div class="row">
                 <div class="col-md-12 col-lg-6 main-banner">
-                  <h2>Elevate Your Journey with Industry-Ready Programs</h2>
-                  <p>Gain a Competitive Edge in Today's Job Market with our Highly Recommended Skill-Focused Certification Programs</p>
+                  <h2>Elevate Your Journey with <br> Industry-Ready Programs</h2>
+                  <p>Gain a Competitive Edge in Today's Job Market with our <br> Highly Recommended Skill-Focused Certification Programs</p>
                   <div class="page-btn">
                     <button type="button" class="btn btn-primary mit-button">Register Now</button>
-                    <button type="button" class="btn btn-primary mit-button cus-btn"><span class="mtsk-download"></span> &nbsp; Download BROCHURE</button>
+                    <button type="button" class="btn btn-primary mit-button cus-btn"><span class="mtsk-download"></span>Download BROCHURE</button>
                   </div>
                   <ul class="insti-list">
                     <li>04 <span>Universities</span></li>
@@ -77,15 +77,61 @@
                   </ul>
                 </div>
                 <div class="col-md-12 col-lg-6">
-                  <img src="assets/images/fintech.png" class="banner-Img" alt="">
+                  <div class="css-details">
+                    <div class="stc-det student-sec">
+                      <img src="assets/images/student.svg" alt="">
+                      <div class="students-det">
+                        <h3>50K+</h3> 
+                        <span>Students</span>
+                      </div>
+                    </div>
+                    <img src="assets/images/home-banner1.png" class="banner-img" alt="Banner 1">
+                    <div class="stc-det course-sec">
+                      <img src="assets/images/cource.svg" alt="">
+                      <div class="students-det">
+                        <h3>04+</h3> 
+                        <span>Courses</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <h4>2</h4>
-            </div>
-            <div class="item">
-              <h4>3</h4>
+            <div>
+              <div class="row">
+                <div class="col-md-12 col-lg-6 main-banner">
+                  <h2>Elevate Your Journey with <br> Industry-Ready Programs</h2>
+                  <p>Gain a Competitive Edge in Today's Job Market with our <br> Highly Recommended Skill-Focused Certification Programs</p>
+                  <div class="page-btn">
+                    <button type="button" class="btn btn-primary mit-button">Register Now</button>
+                    <button type="button" class="btn btn-primary mit-button cus-btn"><span class="mtsk-download"></span>Download BROCHURE</button>
+                  </div>
+                  <ul class="insti-list">
+                    <li>04 <span>Universities</span></li>
+                    <li>70+ <span>Institutions</span></li>
+                    <li>1L+ <span>Alumni</span></li>
+                  </ul>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <div class="css-details">
+                    <div class="stc-det student-sec">
+                      <img src="assets/images/student.svg" alt="">
+                      <div class="students-det">
+                        <h3>50K+</h3> 
+                        <span>Students</span>
+                      </div>
+                    </div>
+                    <img src="assets/images/home-banner1.png" class="banner-img" alt="Banner 1">
+                    <div class="stc-det course-sec">
+                      <img src="assets/images/cource.svg" alt="">
+                      <div class="students-det">
+                        <h3>04+</h3> 
+                        <span>Courses</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -106,16 +152,18 @@
       <section class="alumni">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-2 our-al">
-              <p>Our Alumni Work At</p>
+            <div class="col-md-12 col-lg-4 d-flex">
+              <div class="our-al">
+                <p>Our Alumni <br> Work At</p>
+              </div>
             </div>
-            <div class="col-md-12 col-lg-10">
+            <div class="col-md-12 col-lg-8">
               <ul class="pay-method">
-                <li><img src="assets/images/phonePe.svg" class="img-width" alt=""></li>
-                <li><img src="assets/images/cread.svg" class="img-width" alt=""></li>
-                <li><img src="assets/images/payTM.svg" class="img-width" alt=""></li>
+                <li><img src="assets/images/phonepay.svg" class="img-width phonepay" alt=""></li>
+                <li><img src="assets/images/cred.svg" class="img-width" alt=""></li>
+                <li><img src="assets/images/paytm.svg" class="img-width" alt=""></li>
                 <li><img src="assets/images/mobikwik.svg" class="img-width" alt=""></li>
-                <li><img src="assets/images/razorpay.svg" class="img-width" alt=""></li>
+                <li><img src="assets/images/rojorpay.svg" class="img-width" alt=""></li>
                 <li><img src="assets/images/paypal.svg" class="img-width" alt=""></li>
               </ul>
             </div>
@@ -125,10 +173,12 @@
       <section class="alumni benefits">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-2 our-al">
-              <p>Our Benefits</p>
+            <div class="col-md-12 col-lg-4 d-flex">
+              <div class="our-al">
+                <p>Our <br> Benefits</p>
+              </div>
             </div>  
-            <div class="col-md-12 col-lg-10 our-benefits">
+            <div class="col-md-12 col-lg-8 our-benefits">
               <div class="befit-details">
                 <img src="assets/images/bene-girl.png" alt="">
                 <ul class="bene-list">
@@ -138,18 +188,19 @@
                   <li>Lifetime academic support</li>
                   <li>Hands-on live projects</li>
                   <li>Cutting-edge course curriculum</li>
+                  <li>Globally recognised certifications</li>
                 </ul>
               </div>
           </div>
         </div>
       </section>
       <section>
-       <div class="container-fluid">
-        <div class="container cer-slider">
+       <div class="container">
+        <div class="cer-slider">
           <h2>Popular Certification</h2>
         </div>
         <div class="row">
-          <div class="owl-carousel owl-theme certification-carousel">
+          <div class="certification-carousel" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
             <div class="item">
               <div class="card cus-card">
                 <img src="assets/images/fintech.png" alt="Certification">
@@ -379,59 +430,68 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bootstrap-select.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script>
       $( document ).ready(function() {
-        $('.banner-carousel').owlCarousel({
-          loop:false,
-          responsive:false,
-          responsiveClass:true,
-          responsive:{
-              0:{
-                  items:1,
-                  nav:true,
-                  dots:true
-              }
-          }
-        })
-        var owl = $('.certification-carousel');
-          owl.owlCarousel({
-              responsiveClass:true,
-              nav:true,
-              dots:false,
-              loop:false,
-              center:true,
-              margin:20,
-              URLhashListener:true,
-              autoplayHoverPause:true,
-              responsive: {
-                  0: {
-                    items: 1,
-                    startPosition: 1,
-                  },
-                  768: {
-                    items: 2,
-                    startPosition: 0,
-                  },
-                  1024: {
-                    items: 3,
-                    startPosition: 1,
-                  },
-                  1440: {
-                    items: 4,
-                    startPosition: 1,
-                  }
-                }
+        $('.banner-slider').slick({
+          dots: true,
+          infinite: false,
+          speed: 300
         });
-        owl.on('mousewheel', '.owl-stage', function (e) {
-            if (e.deltaY>0) {
-                owl.trigger('next.owl');
-            } else {
-                owl.trigger('prev.owl');
-            }
-            e.preventDefault();
+        $('.certification-carousel').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 'auto',
+          easing:"linear",
+          centerPadding: '20',
+          slidesToShow: 3
         });
+
+
+        
+        // $('.banner-carousel').owlCarousel({
+        //   loop:false,
+        //   responsive:false,
+        //   responsiveClass:true,
+        //   responsive:{
+        //       0:{
+        //           items:1,
+        //           nav:true,
+        //           dots:true
+        //       }
+        //   }
+        // })
+        // var owl = $('.certification-carousel');
+        //   owl.owlCarousel({
+        //       responsiveClass:true,
+        //       nav:true,
+        //       dots:false,
+        //       loop:false,
+        //       // center:true,
+        //       margin:20,
+        //       // URLhashListener:true,
+        //       autoplayHoverPause:true,
+        //       responsive: {
+        //           0: {
+        //             items: 1,
+        //             startPosition: 1,
+        //           },
+        //           768: {
+        //             items: 2,
+        //             startPosition: 0,
+        //           },
+        //           1024: {
+        //             items: 3,
+        //             startPosition: 1,
+        //           },
+        //           1440: {
+        //             items: 4,
+        //             startPosition: 1,
+        //           }
+        //         }
+        // });
       })
     </script>
   </body>
