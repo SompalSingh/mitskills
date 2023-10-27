@@ -199,7 +199,7 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .feature-details ul li:nth-child(2n+2){margin-right: 0;}
 .alumni{margin: 5rem 0 2rem 0;}
 .alumni .our-al{display: flex;background: url(../images/alumni.png) top left no-repeat;background-size: contain; background-position-y: 20px;}
-.alumni.benefits .our-al{background: url(../images/benefits.png) top left no-repeat;background-size: contain; background-position-y: 20px;}
+.alumni.benefits .our-al{background: url(../images/benefits.png) top left no-repeat;}
 .alumni .our-al p{color: var(--text-color);font-family: var(--font-family-SB);font-size:42px;font-weight: 700;line-height: 48px;}
 .pay-method{display: flex;flex-wrap: wrap;margin: 0;padding: 0;}
 .pay-method li{list-style: none;display: flex;flex-direction: row;align-items: center;justify-content: center;flex: 1 0 30%;border-radius: 5px;padding: 1rem 0;margin: 0.5rem;background: #fff;border: 1px solid #D7D7D7;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
@@ -212,10 +212,10 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .our-benefits .bene-list li{list-style: none;display: flex;flex-direction: row;align-items: center;flex: 1 0 40%;border-radius: 2px;padding:1rem 0 1rem 1rem;margin: .5rem;font-family: var(--font-family-R);color: var(--text-color);font-size: 1rem;font-weight: 400;line-height: 16px;background: #fff;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
 .skill-story{background-color: #FFF5D6;padding: 2rem 0 1rem;}
 .skill-story .mit-det{display: flex;align-items: center;}
-.skill-story .mit-det p{color: var(--text-color);font-family: var(--font-family-SB);font-size: 2rem;font-weight: 700;line-height: 2.5rem;}
+.skill-story .mit-det p{color: var(--text-color);font-family: var(--font-family-SB);font-size: 42px;font-weight: 700;line-height: 48px;}
 .skill-story .with-decades p{color: var(--text-color);font-family: var(--font-family-R);font-size: 1.1rem;font-weight: 400;line-height: 28px;}
 .skill-story.globalAcc{background-color: transparent;padding-bottom: 2rem;}
-.cer-slider h2{color: var(--text-color);font-family: var(--font-family-SB);font-size: 2rem;font-weight: 700;line-height: 2.5rem}
+.cer-slider h2{color: var(--text-color);font-family: var(--font-family-SB);font-size: 42px;font-weight: 700;line-height: 48px}
 .certification-carousel{margin:1rem 0 2rem 0;}
 .cus-card{min-width: 19rem;padding: 0;border-color: #D7D7D7;border-radius:5px;}
 .cus-card .card-title{color: var(--text-color);font-family: var(--font-family-SB);font-size: 1.2rem;font-weight: 700;}
@@ -660,18 +660,21 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .courses-list h2, .contact h2, .contact-info h2{color:var(--text-color);font-family:var(--font-family-SB);font-size:18px;font-weight:700;line-height:28px}
 .courses-list ul{display:flex;flex-direction:column;margin:0;padding:0}
 .courses-list ul li{list-style:none}
-.courses-list ul li a{text-decoration:none;color:var(--text-color);font-size:var(--medium-font-size);line-height:27px}
+.contact-info{
+  padding-left: 2rem;
+}
+.courses-list ul li a{text-decoration:none;color:var(--text-color);font-size:var(--medium-font-size);line-height:27px; display: flex; padding: 3px 0;}
 .contact-info .cc-list.time-list{margin-top:3rem}
-.contact-info .cc-list.time-list h2{margin-bottom:0}
+/* .contact-info .cc-list.time-list h2{margin-bottom:0} */
 .contact-info .cc-list .cc-details{display:flex;align-items:center}
-.contact-info .cc-list .cc-details span{font-size:var(--medium-font-size);margin-right:.5rem}
-.contact-info .cc-list .cc-details.mail-details span{font-size:11px}
+.contact-info .cc-list .cc-details span{font-size:18px;margin-right:.5rem}
+.contact-info .cc-list .cc-details.mail-details span{font-size:15px}
 .contact-info .cc-list .cc-details p{color:var(--text-color);font-size:var(--medium-font-size);margin:0;word-break:break-all}
 .contact{display:flex;flex-direction:column}
 .con-form .input-group-text{background-color:#fff;font-size:12px;color:var(--text-color)}
-.con-form input.form-control{border-left:none;padding-left:0}
+.con-form input.form-control{border-left:none;padding-left:0; padding-top: 12px; padding-bottom: 12px;}
 .con-form .dropdown.bootstrap-select{border:var(--bs-border-width) solid var(--bs-border-color);border-left:0}
-.btn.dropdown-toggle, .btn.dropdown-toggle:hover{color:var(--text-color) !important;background-color:transparent;border-color:inherit;border:0;padding-left:0}
+.btn.dropdown-toggle, .btn.dropdown-toggle:hover{color:var(--text-color) !important;background-color:transparent;border-color:inherit;border:0;padding-left:0; padding-top: 12px; padding-bottom: 12px;}
 .btn-check:checked+.btn.dropdown-toggle, .btn.dropdown-toggle.active, .btn.dropdown-toggle.show, .btn.dropdown-toggle:first-child:active, :not(.btn-check)+.btn.dropdown-toggle:active{color:var(--text-color);background-color:transparent;border-color:inherit}
 .dropdown-menu.show{padding:0;margin-top:-3px !important}
 .dropdown-menu.inner.show{margin:0 !important}
