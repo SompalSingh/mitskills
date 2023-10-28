@@ -28,8 +28,8 @@ body{background-color:#fff;font-family:var(--font-family-R);font-weight:400;line
 .navigation .navbar-nav .nav-item .nav-link{color:var(--text-color);font-family:var(--font-family-SB);font-size:1rem;font-weight:600;text-transform:capitalize; padding: 25px 9px;}
 .dropdown-toggle::after{content:"\e903";font-family:'mitskills' !important;border:0;vertical-align:-0.1rem;font-size:.75rem;margin-left:0.5rem}
 .navigation .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-nav .nav-item .nav-link.active{color:var(--hover-color)}
-.socials{display:flex;align-items:center;justify-content:center;margin:0 1rem 0 0rem;padding:0 0;border-left:1px solid #D7D7D7;border-right:1px solid #D7D7D7}
-.socials .socials-links{display:flex;margin:0 1rem;text-decoration:none;color:var(--text-color);font-size:20px;padding:27px 0;transition:.2s ease-in-out}
+.socials{display:flex;align-items:center;justify-content:center;margin:0 2rem 0 1rem;padding:0 20px;border-left:1px solid #D7D7D7;border-right:1px solid #D7D7D7}
+.socials .socials-links{display:flex;margin:0 12px 0 11px;text-decoration:none;color:var(--text-color);font-size:20px;padding:27px 0;transition:.2s ease-in-out}
 .socials .socials-links:hover{color:var(--hover-color)}
 .mit-button{color:var(--text-color);font-family:var(--font-family-SB);font-size:var(--medium-font-size);font-weight:700;text-transform:uppercase;border-radius:5px;border:none;background:var(--button-bg-color);padding:12px 29px 10px;width:max-content;transition:.2s ease-in-out; white-space:nowrap;}
 .mit-button:hover, .mit-button:active, .mit-button:visited, .mit-button:focus-visible{color:var(--hover-color) !important;background:var(--text-color) !important}
@@ -64,7 +64,7 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .main-banner p{color:var(--text-color);font-family:var(--font-family-R);font-size: 18px;line-height: 30px;margin: 10px 0 24px;}
 .page-btn{display: flex;margin-bottom: 2rem;}
 .mit-button.cus-btn{margin-left: 1rem;background: transparent;border: 1px solid #0D0D0D;display: flex;align-items: center;}
-.mit-button.cus-btn span{font-size: 1rem;padding-right: 10px;}
+.mit-button.cus-btn span{font-size:22px;padding-right: 10px;}
 .main-banner .insti-list{display: flex;margin: 0;padding: 25px 0 0;}
 .main-banner .insti-list li{list-style: none;display: flex;flex-direction: column;margin-right: 6rem;text-align: center;color: var(--text-color);font-family:var(--font-family-SB);font-size: 2rem;font-weight: 700;line-height: 24px;}
 .main-banner .insti-list li span{font-family: var(--font-family-R);font-size: 1rem;font-weight: 400; line-height: 16px;margin-top: .6rem;}
@@ -146,22 +146,22 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   content: "\e90c";
   font-family: 'mitskills' !important;
   color: #fff;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  /* font-weight: 600; */
 }
 
 .banner-slider .slick-next::before{
   content: "\e90d";
   font-family: 'mitskills' !important;
   color: #fff;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  /* font-weight: 600; */
 }
 
 .banner-slider .slick-arrow.slick-disabled{
     cursor: not-allowed;
-    background-color: #f5f5f5;
-    opacity: .5;
+    background-color: #ffffff;
+    /* opacity: .5; */
 }
 .banner-slider .slick-arrow.slick-disabled::before{
   color: #222;
@@ -255,9 +255,9 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .feature-details ul li:nth-child(2n+1){margin-left: 0;}
 .feature-details ul li:last-child{margin-right: 0;}
 .feature-details ul li:nth-child(2n+2){margin-right: 0;}
-.alumni{margin: 5rem 0 2rem 0;}
+.alumni{margin-top: 5rem;}
 .alumni .our-al{display: flex;background: url(../images/alumni.png) top left no-repeat;background-size: contain; background-position-y: 20px;}
-.alumni.benefits .our-al{background: url(../images/benefits.png) top left no-repeat; align-items: center;}
+.alumni.benefits .our-al{background: url(../images/benefits.png) center left no-repeat; align-items: center;}
 .alumni .our-al p{color: var(--text-color);font-family: var(--font-family-SB);font-size:42px;font-weight: 700;line-height: 48px;}
 .pay-method{display: flex;flex-wrap: wrap;margin: 0;padding: 0;}
 .pay-method li{list-style: none;display: flex;flex-direction: row;align-items: center;justify-content: center;width:calc(32% - 6px);border-radius: 5px;padding: 1rem 0;margin: 6px;background: #fff;border: 1px solid #D7D7D7;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
@@ -269,22 +269,25 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 } */
 /* .img-width{height: 40px; width: 50%;} */
 /* .img-width.phonepay{height: 45px;} */
-.alumni.benefits{background: rgb(255,255,255);background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,245,214,1) 50%, rgba(255,245,214,1) 100%);}
-.befit-details{display: flex;align-items: center;border-radius: 0 0 0 100px;padding: 2rem 0;background: rgb(255,255,255);background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,245,214,1) 10%, rgba(255,245,214,1) 100%);}
+.alumni.benefits{background: rgb(255,255,255);background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,245,214,1) 50%, rgba(255,245,214,1) 100%); margin: 7rem 0 5rem;}
+.befit-details{display: flex;align-items: center;border-radius: 0 0 0 100px;padding: 4rem 0;background: rgb(255,255,255);background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,245,214,1) 10%, rgba(255,245,214,1) 100%);}
 .our-benefits img{position: relative;border-radius: 5px; margin-right: 40px;}
 .our-benefits .bene-list{display: flex;flex-wrap: wrap;margin: 0;padding: 0;}
-.our-benefits .bene-list li{list-style: none;display: flex;flex-direction: row;align-items: center;width:calc(50% - 7px);border-radius: 2px;padding:14px;margin: 7px;font-family: var(--font-family-R);color: var(--text-color);font-size: 1rem;font-weight: 400;line-height: 16px;background: #fff;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
+.our-benefits .bene-list li{list-style: none;display: flex;flex-direction: row;align-items: center;width:calc(50% - 7px);border-radius: 2px;padding:24px 14px;margin: 7px;font-family: var(--font-family-R);color: var(--text-color);font-size: 1rem;font-weight: 400;line-height: 16px;background: #fff;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
 .our-benefits .bene-list li:nth-child(2n + 1){
   margin-left: 0;
 }
 .our-benefits .bene-list li:nth-child(2n + 2){
   margin-right: 0;
 }
-.skill-story{background-color: #FFF5D6;padding: 2rem 0 1rem;}
+.skill-story{background-color: #FFF5D6;padding: 4rem 0; margin-top: 4rem;}
 .skill-story .mit-det{display: flex;align-items: center;}
 .skill-story .mit-det p{color: var(--text-color);font-family: var(--font-family-SB);font-size: 42px;font-weight: 700;line-height: 48px;}
 .skill-story .with-decades p{color: var(--text-color);font-family: var(--font-family-R);font-size: 1.1rem;font-weight: 400;line-height: 28px;}
-.skill-story.globalAcc{background-color: transparent;padding-bottom: 2rem;}
+.skill-story .with-decades p:last-child{
+  margin-bottom: 0;
+}
+.skill-story.globalAcc{background-color: transparent;padding: 4rem 0;margin: 0;}
 .cer-slider h2{color: var(--text-color);font-family: var(--font-family-SB);font-size: 42px;font-weight: 700;line-height: 48px}
 .certification-carousel{margin:1rem 0 2rem 0;}
 .slick-track .item.slick-slide{
@@ -316,22 +319,22 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   content: "\e90c";
   font-family: 'mitskills' !important;
   color: #fff;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  /* font-weight: 600; */
 }
 
 .certification-carousel .slick-next::before{
   content: "\e90d";
   font-family: 'mitskills' !important;
   color: #fff;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  /* font-weight: 600; */
 }
 
 .certification-carousel .slick-arrow.slick-disabled{
     cursor: not-allowed;
-    background-color: #f5f5f5;
-    opacity: .5;
+    background-color: #e7e7e7;
+    /* opacity: .5; */
 }
 .certification-carousel .slick-arrow.slick-disabled::before{
   color: #222;
@@ -343,11 +346,13 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 
 
 .cus-card{padding: 0;border-color: #D7D7D7;border-radius:5px; min-height: 444px;}
-.cus-card .card-title{color: var(--text-color);font-family: var(--font-family-SB);font-size: 20px;font-weight: 700;}
+.cus-card .card-title{color: var(--text-color);font-family: var(--font-family-SB);font-size: 20px;font-weight: 700; margin-bottom: 12px;    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;}
 .cus-card .card-body{padding: 30px 34px;background:#F5F5F5;position: relative;}
 .cer-duration{position: absolute;top: -43px;left: -1px;display: flex;flex-direction: row;align-items: center;background-color: #ffffff;padding: 12px 15px 9px;}
 .cer-duration p{margin: 0 0 0 .6rem;}
-.cus-card .card-text{color: var(--text-color);font-family: var(--font-family-R);font-size: 1rem;font-weight: 400; line-height: 24px; margin-bottom: .5rem;}
+.cus-card .card-text{color: var(--text-color);font-family: var(--font-family-R);font-size: 1rem;font-weight: 400; line-height: 24px; margin-bottom:1rem; min-height: 75px;}
 .cus-card .course-fee{display: flex;justify-content: space-between;}
 .cus-card .course-fee p{color: #000;font-family: var(--font-family-R);font-size: 1.1rem;font-weight: 400;line-height: 28px;margin: 0;}
 .card-button{border: 0;background: transparent;margin-top: 1rem;font-size: 1rem;}
@@ -359,12 +364,13 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   position: absolute;
   width: 100%;
   left: 0;
+  z-index: 9;
   /* top: 67px; */
 }
 .ann-box{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 9;
@@ -385,8 +391,8 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 }
 .final-announcement .ann-box .btclosed{
   font-size: 1rem;
-  position: absolute;
-  right: -2rem;
+  /* position: absolute;
+  right: -2rem; */
 }
 .global-acc{
   display: flex;
@@ -416,6 +422,54 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   max-width: 100px;
 }
 
+.dropdown-menu {
+  animation: 0.5s fadeInUp;
+}
+.dropdown-menu.show {
+  animation: 0.5s fadeInDown;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
 /**************** Home page Css ends here *****************/
 /**************** Inner page Css start here *****************/
 .inner-banner{
@@ -748,26 +802,16 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   animation: mover 1s infinite  alternate;
 }
 .stc-det.course-sec {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
+  -webkit-animation: mover1 1s infinite  alternate;
+  animation: mover1 1s infinite  alternate;
 }
 @keyframes mover {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
-  /* 0% {
-    -webkit-transform: translateY(0);
-    transform:translateY(0)
+  100% { transform: translateY(-12px); }
 }
-
-50% {
-    -webkit-transform: translateY(-10%);
-    transform:translateY(-10%)
-}
-
-100% {
-    -webkit-transform: translateY(0);
-    transform:translateY(0)
-} */
+@keyframes mover1 {
+  0% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
 }
 /**************** Modal Css start here *****************/
 .modal.enquiry{
@@ -803,11 +847,18 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 /************************************************
   Footer start here
 /*************************************************/
-.footer{display:flex;justify-content:center;align-items:center;background:#F5F5F5;padding:43px 0 .5rem 0}
+.footer{display:flex;justify-content:center;align-items:center;background:#F5F5F5;padding:43px 0 1rem 0}
 .fls{display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid #D7D7D7}
-.fls p{color:var(--text-color);font-size:var(--medium-font-size);font-weight:400;margin-top:2rem;margin-right:3rem}
-.socials.social-footer{border:none;align-items:flex-start;justify-content:flex-start}
+.fls p{color:var(--text-color);font-size:var(--medium-font-size);font-weight:400;margin-top:-2rem;margin-right:3rem; margin-bottom: 0;}
+.socials.social-footer{border:none;align-items:flex-start;justify-content:flex-start; margin: 0; padding-left: 0;}
 .socials.social-footer .socials-links:first-child{margin-left:0}
+.socials.social-footer .socials-links{padding: 0;}
+
+
+
+
+
+
 .courses-list{display:flex;flex-direction:column;border-right:1px solid #D7D7D7;padding-left:2rem}
 .courses-list h2, .contact h2, .contact-info h2{color:var(--text-color);font-family:var(--font-family-SB);font-size:18px;font-weight:700;line-height:28px}
 .courses-list ul{display:flex;flex-direction:column;margin:0;padding:0}
@@ -819,23 +870,27 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .contact-info .cc-list.time-list{margin-top:3rem}
 /* .contact-info .cc-list.time-list h2{margin-bottom:0} */
 .contact-info .cc-list .cc-details{display:flex;align-items:center}
-.contact-info .cc-list .cc-details span{font-size:18px;margin-right:.5rem}
-.contact-info .cc-list .cc-details.mail-details span{font-size:15px}
+.contact-info .cc-list .cc-details span{font-size:18px;margin-right:.5rem; color: #777;}
+.contact-info .cc-list .cc-details.mail-details span{font-size:14px; color: #777;}
 .contact-info .cc-list .cc-details p{color:var(--text-color);font-size:var(--medium-font-size);margin:0;word-break:break-all}
 .contact{display:flex;flex-direction:column}
-.con-form .input-group-text{background-color:#fff;font-size:16px;color:var(--text-color)}
-.con-form input.form-control{border-left:none;padding-left:0; padding-top: 12px; padding-bottom: 12px;}
+.con-form .input-group-text{background-color:#fff;font-size:16px;color:#777}
+.con-form .input-group-text .mtsk-mail, .con-form .input-group-text .mtsk-cource{
+  font-size: 14px;
+}
+.con-form input.form-control{border-left:none;padding-left:0; padding-top: 10px; padding-bottom: 10px;}
 .con-form .dropdown.bootstrap-select{border:var(--bs-border-width) solid var(--bs-border-color);border-left:0}
-.btn.dropdown-toggle, .btn.dropdown-toggle:hover{color:var(--text-color) !important;background-color:transparent;border-color:inherit;border:0;padding-left:0; padding-top: 12px; padding-bottom: 12px;}
+.btn.dropdown-toggle, .btn.dropdown-toggle:hover{color:var(--text-color) !important;background-color:transparent;border-color:inherit;border:0;padding-left:0; padding-top: 10px; padding-bottom: 10px;}
 .btn-check:checked+.btn.dropdown-toggle, .btn.dropdown-toggle.active, .btn.dropdown-toggle.show, .btn.dropdown-toggle:first-child:active, :not(.btn-check)+.btn.dropdown-toggle:active{color:var(--text-color);background-color:transparent;border-color:inherit}
 .dropdown-menu.show{padding:0;margin-top:-3px !important}
 .dropdown-menu.inner.show{margin:0 !important}
 .bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover{padding-left:0;background-color:#ffffff}
 .bootstrap-select .dropdown-menu li:first-child{display:none}
 .bottom-footer{border-top:1px solid #ccc;padding:1rem 0 0;margin-top:1.4rem;display:flex;width:100%;flex-direction:row;justify-content:space-between}
-.bottom-footer p{color:var(--text-color);font-size:.813rem;line-height:19.6px;margin:0}
+.bottom-footer p{color:var(--text-color);font-size:.813rem;line-height:19.6px;margin:0; display: flex; align-items: center;}
 .bottom-footer p i{
   font-size: 23px;
+  margin-left: 10px;
 }
 .bottom-footer .terms-list{display:flex;justify-content:space-between;flex:0 0 60%}
 .bottom-footer ul{display:flex;flex-direction:row;margin:0;padding:0}
@@ -854,19 +909,72 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
     overflow: inherit;
   }
 }
-@media (max-width:1200px){
-  .main-banner h2{font-size: 2rem;line-height: 3rem;}
-  .banner .owl-carousel{padding: 2rem 0 1rem;}
-  .main-banner p {font-size:1rem;line-height: 22px;margin: 1rem 0;}
-  .img-width{width: 50%;}
+@media (max-width:1199px){
+  .banner{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .main-banner h2 br, .main-banner p br{
+    display: none;
+  }
+  .pay-method li{
+    width: calc(50% - 12px);
+  }
+  .our-benefits .bene-list li{
+    width: calc(100% - 0px);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cus-card .card-text{
+    min-height: 96px;
+  }
+  /* .banner .owl-carousel{padding: 2rem 0 1rem;}
+  .main-banner p {font-size:1rem;line-height: 22px;margin: 1rem 0;} */
+  /* .img-width{width: 50%;} */
+  .banner-img{
+    width: 100%;
+  }
+  .css-details .stc-det{
+    display: none;
+  }
+  .banner-slider .slick-next{
+  right: -10px;
+}
+.banner-slider .slick-prev{
+  right: 30px;
+}
+.skill-story .mit-det p{font-size: 30px; line-height: 38px;}
+.skill-story .with-decades p{font-size: 1rem;}
 }
 @media (max-width:991px){
+  .main-body{
+    padding-top: 67px ;
+    min-height: calc(100vh - 393px);
+  }
+  .banner{
+    padding-top: 24px;
+  }
+  .main-banner h2 br, .main-banner p br, .alumni .our-al p br, .skill-story .mit-det p br{
+    display: none;
+  }
   .navigation .navbar-nav .nav-item .nav-link{
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   }
+  .css-details .stc-det{
+    display: none;
+  }
+  .banner-slider .slick-arrow{
+    display: none !important;
+  }
+  .banner-slider .slick-dots{
+    display: block !important;
+  }
+  .certification-carousel .slick-arrow{
+    display: none !important;
+  }
   .navigation{padding: .6rem 0;}
   .navigation .navbar-nav{align-items:flex-start}
-  .socials{align-items:flex-start;justify-content:flex-start;border:none}
+  .socials{align-items:flex-start;justify-content:flex-start;border:none; padding: 0; margin: 0;}
   .socials .socials-links:first-child{margin-left:0}
   .navigation .navbar-nav .nav-item{padding:0}
   .mit-button{margin-bottom:1rem}
@@ -876,9 +984,9 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   .fls p{margin:0;padding:0}
   .courses-list{padding-left:calc(var(--bs-gutter-x) * .5)}
   .footer{padding-top: 1rem;}.bottom-footer .terms-list{flex:0 0 50%}
-  .main-banner h2{font-size: 1.5rem;line-height: 2rem;}
+  .main-banner h2{font-size: 30px;line-height: 38px;}
   .banner .owl-carousel{padding: 2rem 0 1rem;}
-  .main-banner p {font-size:1rem;line-height: 22px;margin: 1rem 0;}
+  .main-banner p {font-size:1rem;line-height: 22px;margin: 14px 0 1rem}
   .page-btn{margin-bottom: 0;}
   .mit-button.cus-btn{display: none;}
   .main-banner .insti-list li{margin-right: 4rem;}
@@ -886,18 +994,31 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   .owl-theme .owl-dots{display: block;}
   .main-banner .insti-list{display: none;}
   .feature-details{display: block;}
-  .alumni .our-al p{font-size: 1.5rem;}
+  .alumni .our-al p, .cer-slider h2{font-size: 30px; line-height: 38px;}
   .img-width{width: 75%;}
-  .skill-story{background-color: transparent;padding-top: 0;}
-  .skill-story .mit-det {justify-content: center;}
-  .skill-story .mit-det p{font-size: 1.5rem;}
-  .skill-story .with-decades p{font-size: 1rem;}
-  .skill-story.globalAcc{padding-top: 0;}
-  .alumni{background: transparent;margin: 5rem 0 2rem 0;position: relative;}
+  .skill-story{background-color: transparent;padding: 0; margin-top: 2rem;}
+  .skill-story .mit-det {justify-content: flex-start;}
+ 
+  .skill-story.globalAcc{padding: 2rem 0;}
+  .alumni{background: transparent;margin: 3rem 0 3rem 0;position: relative;}
   .alumni .our-al{background: transparent;justify-content: center;}
-  .alumni.benefits{background: #FFF5D6;border-radius: 0;}
-  .alumni.benefits .our-al p{position: absolute;top: -3rem;}
-  .befit-details{background: transparent;}
+  .alumni.benefits{
+    background: transparent;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .our-benefits .bene-list li{
+    width: 100%;
+    margin: 7px 0;
+  }
+  .our-benefits{background: #FFF5D6;border-radius: 0;}
+  .alumni.benefits .our-al{
+    background: transparent;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  /* .alumni.benefits .our-al p{position: absolute;top: -3rem;} */
+  .befit-details{background: transparent; padding: 1rem 0;}
   .our-benefits img{display: none;}
 
   .inner-banner{
@@ -970,25 +1091,25 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   /* .enroll-certification .fin-feature.learn-expert{
     padding-top: 0;
   } */
-}
-@media (max-width:767px){
-  .main-body{
-    padding-top: 67px;
-  }
-  .banner{
-    padding-top: 24px;
-  }
+
   .res-row .contact{order:1}
   .res-row .courses-list{order:2;padding-left:calc(var(--bs-gutter-x) * .5);border-right:0; margin-top: 1rem;}
-  .res-row .contact-info{order:3;margin-top:1.5rem}
+  .res-row .contact-info{order:3;margin-top:1.5rem;    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);}
   .res-row .contact-info .cc-list.time-list{  margin-top:1rem}
   .res-row .fls{order:4;border-right:0}
   .res-row .fls .logo-img,  .res-row .fls p{display:none}
-  .res-row .fls .socials.social-footer{margin-top:1rem}
+  .res-row .fls .socials.social-footer{margin:2rem 0 1rem}
   .bottom-footer{margin-top:0;flex-wrap:wrap}
   .bottom-footer .right-reserved{order:1;flex:1 0 100%}
   .bottom-footer .terms-list{display:flex;justify-content:space-between;flex:1 0 100%;border-bottom:1px solid #ccc;padding-bottom:1rem;margin-bottom:1rem}
   .bottom-footer .terms-list ul li a{padding-left:0}  
+}
+@media (max-width: 767px) {
+  .main-body{
+    padding-top: 67px;
+  }
+ 
   .main-banner h2{font-size: 30px;line-height: 38px;}
   .banner .owl-carousel{padding: 2rem 0 1rem;}
   .main-banner p {font-size:14px;line-height: 24px;margin: .5rem 0 1rem;}
@@ -996,19 +1117,13 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
     max-width: 100%;
     max-height: 100%;
 }
-.css-details .stc-det{
-  display: none;
-}
-.banner-slider .slick-arrow{
-  display: none !important;
-}
-.banner-slider .slick-dots{
-  display: block !important;
-}
+
+
+
   .page-btn{margin-bottom: 0;}
   .mit-button.cus-btn{display: none;}
   .main-banner .insti-list li{margin-right: 4rem;}
-  .alumni{margin: 1rem 0;}
+  .alumni{margin: 3rem 0 0;}
   .alumni .our-al{background: none;justify-content: center;}
   .img-width{width: 60%;}
   .pay-method li{width: calc(50% - 6px);}
@@ -1022,7 +1137,30 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
     font-size: 30px;
     line-height: 38px;
   }
-  .main-banner h2 br, .main-banner p br, .alumni .our-al p br{
-    display: none;
+  
+  .ann-box{
+    flex-direction: column;
+  }
+  .final-announcement .ann-box .btclosed{
+    margin-top: 1rem;
+  }
+  .final-announcement .ann-box p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .slick-track .item.slick-slide{
+    margin: 5px;
+  }
+
+  .cer-slider h2{
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .certification-carousel{
+    margin: 0;
   }
 }
+
+
+@media (max-width: 1200px) {}
+@media (max-width: 1400px) {}

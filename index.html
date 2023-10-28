@@ -181,7 +181,7 @@
             </div>  
             <div class="col-md-12 col-lg-8 our-benefits">
               <div class="befit-details">
-                <img src="assets/images/bene-girl.png" alt="">
+                <img src="assets/images/bene-girl1.png" alt="">
                 <ul class="bene-list">
                   <li>Industry-ready programs</li>
                   <li>100% placement assistance</li>
@@ -201,7 +201,7 @@
           <h2>Popular Certification</h2>
         </div>
         <div class="row">
-          <div class="certification-carousel" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+          <div class="certification-carousel">
             <div class="item">
               <div class="card cus-card">
                 <img src="assets/images/fintech.png" alt="Certification">
@@ -356,7 +356,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row res-row">
-          <div class="col-md-3 col-xl-3 fls">
+          <div class="col-md-12 col-lg-3 fls">
             <div class="logo-img">
               <img src="assets/images/mitskills-logo.svg" width="auto" height="auto" class="img-fluid " alt="Footer Logo" />
             </div>
@@ -367,7 +367,7 @@
               <a class="socials-links" href="#"><i class="mtsk-linkedIn"></i></a>
             </ul>
           </div>
-          <div class="col-md-3 col-xl-3 courses-list">
+          <div class="col-md-12 col-lg-3 courses-list">
             <h2>Courses</h2>
             <ul>
               <li><a href="#">Fin Tech</a></li>
@@ -377,7 +377,7 @@
               <li><a href="#">CAPM certification</a></li>
             </ul>
           </div>
-          <div class="col-md-3 col-xl-3 contact-info">
+          <div class="col-md-12 col-lg-3 contact-info">
             <div class="cc-list">
               <h2>Contact Info</h2>
               <div class="cc-details mail-details">
@@ -397,7 +397,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-xl-3 contact">
+          <div class="col-md-12 col-lg-3 contact">
             <h2>Get in touch</h2>
             <form method="post">
               <div class="input-group mb-2 con-form">
@@ -423,7 +423,7 @@
                   <option value="5">CAPM certification</option>
                 </select>
               </div>
-              <button type="button" class="btn btn-primary mit-button mit-footer btn-ripple w-100">Register Now</button>
+              <button type="button" class="btn btn-primary mit-button mit-footer btn-ripple w-100 mt-2">Register Now</button>
             </form>
           </div>
         </div>
@@ -455,11 +455,25 @@
         $('.certification-carousel').slick({
           dots: false,
           infinite: false,
-          // speed: 300,
-          // slidesToShow: 2,
-          // slidesToScroll: 1
-          slidesToShow: 2,
-        slidesToScroll: 1
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
         });
       })
     </script>
