@@ -25,11 +25,11 @@ body{background-color:#fff;font-family:var(--font-family-R);font-weight:400;line
 .avigation a.navbar-brand{display:flex;align-items:center;padding:1.1rem 0}
 .navigation .navbar-nav{display:flex;justify-content:center;align-items:center}
 .navigation .navbar-nav .nav-item{padding:0 0.6rem}
-.navigation .navbar-nav .nav-item .nav-link{color:var(--text-color);font-family:var(--font-family-SB);font-size:1rem;font-weight:600;text-transform:capitalize}
+.navigation .navbar-nav .nav-item .nav-link{color:var(--text-color);font-family:var(--font-family-SB);font-size:1rem;font-weight:600;text-transform:capitalize; padding: 25px 9px;}
 .dropdown-toggle::after{content:"\e903";font-family:'mitskills' !important;border:0;vertical-align:-0.1rem;font-size:.75rem;margin-left:0.5rem}
 .navigation .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-nav .nav-item .nav-link.active{color:var(--hover-color)}
 .socials{display:flex;align-items:center;justify-content:center;margin:0 1rem 0 0rem;padding:0 0;border-left:1px solid #D7D7D7;border-right:1px solid #D7D7D7}
-.socials .socials-links{display:flex;margin:0 1rem;text-decoration:none;color:var(--text-color);font-size:1.2rem;padding:1.5rem 0;transition:.2s ease-in-out}
+.socials .socials-links{display:flex;margin:0 1rem;text-decoration:none;color:var(--text-color);font-size:20px;padding:27px 0;transition:.2s ease-in-out}
 .socials .socials-links:hover{color:var(--hover-color)}
 .mit-button{color:var(--text-color);font-family:var(--font-family-SB);font-size:var(--medium-font-size);font-weight:700;text-transform:uppercase;border-radius:5px;border:none;background:var(--button-bg-color);padding:12px 29px 10px;width:max-content;transition:.2s ease-in-out; white-space:nowrap;}
 .mit-button:hover, .mit-button:active, .mit-button:visited, .mit-button:focus-visible{color:var(--hover-color) !important;background:var(--text-color) !important}
@@ -41,7 +41,13 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 /************************************************
   Body start here
 /*************************************************/
-.main-body{min-height:calc(100vh - 395px);padding-top:67px;display:inline-block;width:100vw;position: relative;}
+.main-body{
+  min-height: calc(100vh - 437px);
+  padding-top: 75px;
+  display: inline-block;
+  width: 100vw;
+  position: relative;
+}
 /**************** Home page Css start here *****************/
 .banner{
   background: #FFF5D6 url(../images/home-bg.png) top center no-repeat;
@@ -167,8 +173,43 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .banner-slider .slick-dots{
   display: none !important;
 }
+.banner-slider .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
 
+.banner-slider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  /* width: 37px;
+  height: 4px; */
+  /* cursor: pointer; */
+  /* color: transparent;
+  border: 0;
+  outline: none;
+  border-radius: 10px; */
+}
 
+.banner-slider .slick-dots li button {
+  width: 37px;
+  height: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #D7D7D7;
+  border-radius: 10px;
+}
+.banner-slider .slick-dots li.slick-active button {
+  background: #222222;
+}
 
 
 
@@ -191,25 +232,54 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 
 /*********** slider css ends here *******************/
 .feature-details{display: none;}
-.feature-details ul{display: flex;flex-direction: row;flex-wrap: wrap;margin: 0;padding: 0;}
-.feature-details ul li{list-style: none;display: flex;flex-direction: row;align-items: center;justify-content: flex-start;flex: 1 0 45%;color: var(--hover-color);font-family: var(--font-family-SB);font-size: 2.2rem;font-weight: 700;line-height: 24px;border-radius: 5px;padding: 1rem;margin: 0.5rem;background: #fff;box-shadow: 4px 10px 30px 0px rgba(0, 0, 0, 0.06);}
-.feature-details ul li span{font-family: var(--font-family-R);color: var(--text-color);font-size: 1rem;font-weight: 400;line-height: 16px;margin-left: 0.6rem;}
+.feature-details ul{display: flex;flex-direction: row;flex-wrap: wrap;margin:2rem 0 0;padding: 0;}
+.feature-details ul li{
+  list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(50% - 6px);
+    color: var(--hover-color);
+    font-family: var(--font-family-SB);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 12px;
+    margin: 6px 6px;
+    background: #fff;
+    box-shadow: 4px 10px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-details ul li span{font-family: var(--font-family-R);color: var(--text-color);font-size: 1rem;font-weight: 400;line-height: 16px;margin-left: 12px;}
 .feature-details ul li:nth-child(2n+1){margin-left: 0;}
 .feature-details ul li:last-child{margin-right: 0;}
 .feature-details ul li:nth-child(2n+2){margin-right: 0;}
 .alumni{margin: 5rem 0 2rem 0;}
 .alumni .our-al{display: flex;background: url(../images/alumni.png) top left no-repeat;background-size: contain; background-position-y: 20px;}
-.alumni.benefits .our-al{background: url(../images/benefits.png) top left no-repeat;}
+.alumni.benefits .our-al{background: url(../images/benefits.png) top left no-repeat; align-items: center;}
 .alumni .our-al p{color: var(--text-color);font-family: var(--font-family-SB);font-size:42px;font-weight: 700;line-height: 48px;}
 .pay-method{display: flex;flex-wrap: wrap;margin: 0;padding: 0;}
-.pay-method li{list-style: none;display: flex;flex-direction: row;align-items: center;justify-content: center;flex: 1 0 30%;border-radius: 5px;padding: 1rem 0;margin: 0.5rem;background: #fff;border: 1px solid #D7D7D7;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
+.pay-method li{list-style: none;display: flex;flex-direction: row;align-items: center;justify-content: center;width:calc(32% - 6px);border-radius: 5px;padding: 1rem 0;margin: 6px;background: #fff;border: 1px solid #D7D7D7;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
+/* .pay-method li:nth-child(2n + 1){
+  margin-left: 0;
+}
+.pay-method li:nth-child(2n + 2){
+  margin-right: 0;
+} */
 /* .img-width{height: 40px; width: 50%;} */
 /* .img-width.phonepay{height: 45px;} */
 .alumni.benefits{background: rgb(255,255,255);background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,245,214,1) 50%, rgba(255,245,214,1) 100%);}
 .befit-details{display: flex;align-items: center;border-radius: 0 0 0 100px;padding: 2rem 0;background: rgb(255,255,255);background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,245,214,1) 10%, rgba(255,245,214,1) 100%);}
-.our-benefits img{position: relative;border-radius: 5px;}
+.our-benefits img{position: relative;border-radius: 5px; margin-right: 40px;}
 .our-benefits .bene-list{display: flex;flex-wrap: wrap;margin: 0;padding: 0;}
-.our-benefits .bene-list li{list-style: none;display: flex;flex-direction: row;align-items: center;flex: 1 0 40%;border-radius: 2px;padding:1rem 0 1rem 1rem;margin: .5rem;font-family: var(--font-family-R);color: var(--text-color);font-size: 1rem;font-weight: 400;line-height: 16px;background: #fff;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
+.our-benefits .bene-list li{list-style: none;display: flex;flex-direction: row;align-items: center;width:calc(50% - 7px);border-radius: 2px;padding:14px;margin: 7px;font-family: var(--font-family-R);color: var(--text-color);font-size: 1rem;font-weight: 400;line-height: 16px;background: #fff;box-shadow: 0px 27px 39px -25px rgba(39, 52, 120, 0.25);}
+.our-benefits .bene-list li:nth-child(2n + 1){
+  margin-left: 0;
+}
+.our-benefits .bene-list li:nth-child(2n + 2){
+  margin-right: 0;
+}
 .skill-story{background-color: #FFF5D6;padding: 2rem 0 1rem;}
 .skill-story .mit-det{display: flex;align-items: center;}
 .skill-story .mit-det p{color: var(--text-color);font-family: var(--font-family-SB);font-size: 42px;font-weight: 700;line-height: 48px;}
@@ -217,12 +287,67 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .skill-story.globalAcc{background-color: transparent;padding-bottom: 2rem;}
 .cer-slider h2{color: var(--text-color);font-family: var(--font-family-SB);font-size: 42px;font-weight: 700;line-height: 48px}
 .certification-carousel{margin:1rem 0 2rem 0;}
-.cus-card{min-width: 19rem;padding: 0;border-color: #D7D7D7;border-radius:5px;}
-.cus-card .card-title{color: var(--text-color);font-family: var(--font-family-SB);font-size: 1.2rem;font-weight: 700;}
-.cus-card .card-body{padding: 2rem 2rem 1rem;background:#F5F5F5;position: relative;}
-.cer-duration{position: absolute;top: -47px;left: -1px;display: flex;flex-direction: row;align-items: center;background-color: #ffffff;padding: .8rem;}
-.cer-duration p{margin: 0 0 0 1rem;}
-.cus-card .card-text{color: var(--text-color);font-family: var(--font-family-R);font-size: 1rem;font-weight: 400;}
+.slick-track .item.slick-slide{
+  margin-right: 1.5rem;
+}
+
+.certification-carousel .slick-arrow{ 
+  color: transparent;
+  font-size: 1rem;
+  padding: 10px !important;
+  background: var(--text-color);
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top:-65px;
+  right: 0;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+.certification-carousel .slick-prev{
+  right: 40px;
+}
+.certification-carousel .slick-next{
+  right: 0;
+}
+.certification-carousel .slick-prev::before{
+  content: "\e90c";
+  font-family: 'mitskills' !important;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.certification-carousel .slick-next::before{
+  content: "\e90d";
+  font-family: 'mitskills' !important;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.certification-carousel .slick-arrow.slick-disabled{
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+    opacity: .5;
+}
+.certification-carousel .slick-arrow.slick-disabled::before{
+  color: #222;
+}
+
+
+
+
+
+
+.cus-card{padding: 0;border-color: #D7D7D7;border-radius:5px; min-height: 444px;}
+.cus-card .card-title{color: var(--text-color);font-family: var(--font-family-SB);font-size: 20px;font-weight: 700;}
+.cus-card .card-body{padding: 30px 34px;background:#F5F5F5;position: relative;}
+.cer-duration{position: absolute;top: -43px;left: -1px;display: flex;flex-direction: row;align-items: center;background-color: #ffffff;padding: 12px 15px 9px;}
+.cer-duration p{margin: 0 0 0 .6rem;}
+.cus-card .card-text{color: var(--text-color);font-family: var(--font-family-R);font-size: 1rem;font-weight: 400; line-height: 24px; margin-bottom: .5rem;}
 .cus-card .course-fee{display: flex;justify-content: space-between;}
 .cus-card .course-fee p{color: #000;font-family: var(--font-family-R);font-size: 1.1rem;font-weight: 400;line-height: 28px;margin: 0;}
 .card-button{border: 0;background: transparent;margin-top: 1rem;font-size: 1rem;}
@@ -234,7 +359,7 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   position: absolute;
   width: 100%;
   left: 0;
-  top: 67px;
+  /* top: 67px; */
 }
 .ann-box{
   display: flex;
@@ -262,6 +387,33 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   font-size: 1rem;
   position: absolute;
   right: -2rem;
+}
+.global-acc{
+  display: flex;
+}
+.global-acc ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border-bottom: 1px solid #D7D7D7; */
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 9;
+  position: relative;
+  transition: all ease 0.3s;
+  transform: translate3d(0, 0, 0);
+  overflow-x: auto;
+    white-space: nowrap;
+    padding: 0;
+}
+.global-acc ul li{
+  list-style: none;
+  /* flex: 1 0 20%; */
+  display: flex;
+  margin-right:1.15rem;
+}
+.global-acc ul li img{
+  max-width: 100px;
 }
 
 /**************** Home page Css ends here *****************/
@@ -671,7 +823,7 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .contact-info .cc-list .cc-details.mail-details span{font-size:15px}
 .contact-info .cc-list .cc-details p{color:var(--text-color);font-size:var(--medium-font-size);margin:0;word-break:break-all}
 .contact{display:flex;flex-direction:column}
-.con-form .input-group-text{background-color:#fff;font-size:12px;color:var(--text-color)}
+.con-form .input-group-text{background-color:#fff;font-size:16px;color:var(--text-color)}
 .con-form input.form-control{border-left:none;padding-left:0; padding-top: 12px; padding-bottom: 12px;}
 .con-form .dropdown.bootstrap-select{border:var(--bs-border-width) solid var(--bs-border-color);border-left:0}
 .btn.dropdown-toggle, .btn.dropdown-toggle:hover{color:var(--text-color) !important;background-color:transparent;border-color:inherit;border:0;padding-left:0; padding-top: 12px; padding-bottom: 12px;}
@@ -682,6 +834,9 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
 .bootstrap-select .dropdown-menu li:first-child{display:none}
 .bottom-footer{border-top:1px solid #ccc;padding:1rem 0 0;margin-top:1.4rem;display:flex;width:100%;flex-direction:row;justify-content:space-between}
 .bottom-footer p{color:var(--text-color);font-size:.813rem;line-height:19.6px;margin:0}
+.bottom-footer p i{
+  font-size: 23px;
+}
 .bottom-footer .terms-list{display:flex;justify-content:space-between;flex:0 0 60%}
 .bottom-footer ul{display:flex;flex-direction:row;margin:0;padding:0}
 .bottom-footer ul li{list-style:none}
@@ -706,6 +861,9 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   .img-width{width: 50%;}
 }
 @media (max-width:991px){
+  .navigation .navbar-nav .nav-item .nav-link{
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  }
   .navigation{padding: .6rem 0;}
   .navigation .navbar-nav{align-items:flex-start}
   .socials{align-items:flex-start;justify-content:flex-start;border:none}
@@ -814,6 +972,12 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   } */
 }
 @media (max-width:767px){
+  .main-body{
+    padding-top: 67px;
+  }
+  .banner{
+    padding-top: 24px;
+  }
   .res-row .contact{order:1}
   .res-row .courses-list{order:2;padding-left:calc(var(--bs-gutter-x) * .5);border-right:0; margin-top: 1rem;}
   .res-row .contact-info{order:3;margin-top:1.5rem}
@@ -825,14 +989,40 @@ ul.dropdown-menu{padding:0;margin:1rem 0 0 !important;border-radius:5px;border:0
   .bottom-footer .right-reserved{order:1;flex:1 0 100%}
   .bottom-footer .terms-list{display:flex;justify-content:space-between;flex:1 0 100%;border-bottom:1px solid #ccc;padding-bottom:1rem;margin-bottom:1rem}
   .bottom-footer .terms-list ul li a{padding-left:0}  
-  .main-banner h2{font-size: 1.5rem;line-height: 2rem;}
+  .main-banner h2{font-size: 30px;line-height: 38px;}
   .banner .owl-carousel{padding: 2rem 0 1rem;}
-  .main-banner p {font-size:1rem;line-height: 22px;margin: 1rem 0;}
+  .main-banner p {font-size:14px;line-height: 24px;margin: .5rem 0 1rem;}
+  .banner-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.css-details .stc-det{
+  display: none;
+}
+.banner-slider .slick-arrow{
+  display: none !important;
+}
+.banner-slider .slick-dots{
+  display: block !important;
+}
   .page-btn{margin-bottom: 0;}
   .mit-button.cus-btn{display: none;}
   .main-banner .insti-list li{margin-right: 4rem;}
   .alumni{margin: 1rem 0;}
   .alumni .our-al{background: none;justify-content: center;}
   .img-width{width: 60%;}
-  .pay-method li{flex: 1 0 45%;}
+  .pay-method li{width: calc(50% - 6px);}
+  .pay-method li:nth-child(2n + 1){
+    margin-left: 0;
+  }
+  .pay-method li:nth-child(2n + 2){
+    margin-right: 0;
+  }
+  .alumni .our-al p {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .main-banner h2 br, .main-banner p br, .alumni .our-al p br{
+    display: none;
+  }
 }

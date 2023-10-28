@@ -31,7 +31,7 @@ $('.app-features li a').on('click', function(){
     $(this).addClass('current');
 });
 
-setTimeout(function() { $(".final-announcement").slideUp(500); }, 5000)
+// setTimeout(function() { $(".final-announcement").slideUp(500); }, 5000)
 $('.btclosed').click(function(){
 	$(".final-announcement").slideUp(500);
 });

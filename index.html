@@ -136,6 +136,7 @@
           </div>
         </div>
       </section>
+  
       <section>
         <div class="container">
           <div class="feature-details">
@@ -200,7 +201,7 @@
           <h2>Popular Certification</h2>
         </div>
         <div class="row">
-          <div class="certification-carousel" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+          <div class="certification-carousel" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
             <div class="item">
               <div class="card cus-card">
                 <img src="assets/images/fintech.png" alt="Certification">
@@ -316,10 +317,10 @@
       <section class="skill-story">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-4 mit-det">
+            <div class="col-md-12 col-lg-3 mit-det">
               <p>MIT Skills <br> Story</p>
             </div>
-            <div class="col-md-12 col-lg-8 with-decades">
+            <div class="col-md-12 col-lg-9 with-decades">
               <p>With over 2 decades of imparting industry-oriented programs to more than 6000 alumni, we observed, emerging technologies require new-age skills and technical knowledge to fill the burgeoning gaps.</p>
               <p>MIT Skills, a constituent of MIT Pune, was born out of this need to meet the demand for specialised skillsets and niche knowledge. We deliver specially crafted skill-centric programs that impart industry-relevant knowledge to ensure enriching professional advancement and increased employability.</p>
             </div>
@@ -329,11 +330,23 @@
       <section class="skill-story globalAcc">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-4 mit-det">
+            <div class="col-md-12 col-lg-3 mit-det">
               <p>Global <br> Accreditations</p>
             </div>
-            <div class="col-md-12 col-lg-8">
-              <img src="assets/images/global.png" width="auto" height="auto" class="img-fluid w-100" alt="">
+            <div class="col-md-12 col-lg-9">
+              <div class="global-acc">
+                <ul>
+                  <li><img src="assets/images/iassc.png" alt=""></li>
+                  <li><img src="assets/images/cfssc.png" alt=""></li>
+                  <li><img src="assets/images/ilf.png" alt=""></li>
+                  <li><img src="assets/images/cpd.png" alt=""></li>
+                  <li><img src="assets/images/iso.png" alt=""></li>
+                  <li><img src="assets/images/pecb.png" alt=""></li>
+                  <li><img src="assets/images/cert.png" alt=""></li>
+                  <li><img src="assets/images/fly.png" alt=""></li>
+                </ul>
+              </div>
+              <!-- <img src="assets/images/global.png" width="auto" height="auto" class="img-fluid w-100" alt=""> -->
             </div>
           </div>
         </div>
@@ -440,11 +453,13 @@
           speed: 300
         });
         $('.certification-carousel').slick({
-          dots: true,
+          dots: false,
           infinite: false,
-          speed: 300,
+          // speed: 300,
+          // slidesToShow: 2,
+          // slidesToScroll: 1
           slidesToShow: 2,
-          slidesToScroll: 1
+        slidesToScroll: 1
         });
       })
     </script>
