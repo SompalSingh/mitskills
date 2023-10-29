@@ -33,14 +33,6 @@
     font-style: normal;
     font-display: block;
   }
-  @font-face {
-    font-family: 'proximaNova-EB';
-    src:  url('../fonts/ProximaNova-Extrabld.ttf');
-    src:   url('../fonts/ProximaNova-Extrabld.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
 
   
 /************************************************

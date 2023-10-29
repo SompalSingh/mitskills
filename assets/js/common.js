@@ -19,19 +19,39 @@ $(document).ready(function() {
 
 //You can add your JS below here.............
 
-
-// $('.app-features').find('li').click(function(){
-// 	var width = $(this).width();
-// 	console.log(width)
-// 	$('.app-features > .scroll-bottom').css('left', width + 'px');  
-//   });
-  
-$('.app-features li a').on('click', function(){
-    $('.app-features li a.current').removeClass('current');
-    $(this).addClass('current');
-});
+	var sections = $('section'), nav = $('.app-features li'), nav_height = nav.outerHeight() + 70;
+	$(window).on('scroll', function () {
+		var cur_pos = $(this).scrollTop() + 1;
+		sections.each(function() {
+		var top = $(this).offset().top - nav_height,
+			bottom = top + $(this).outerHeight();
+		if (cur_pos >= top && cur_pos <= bottom) {
+			nav.find('a').removeClass('active');
+			sections.removeClass('active');
+			$(this).addClass('active');
+			nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+		}
+		});
+	});
+	nav.find('a').on('click', function () {
+		var $el = $(this), id = $el.attr('href');
+		$('html, body').animate({
+		scrollTop: $(id).offset().top - nav_height
+		}, 100);
+		return false;
+	});
 
 // setTimeout(function() { $(".final-announcement").slideUp(500); }, 5000)
 $('.btclosed').click(function(){
 	$(".final-announcement").slideUp(500);
 });
+
+ // Add slideDown animation to Bootstrap dropdown when expanding.
+ $('.dropdown').on('show.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+
+  // Add slideUp animation to Bootstrap dropdown when collapsing.
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
