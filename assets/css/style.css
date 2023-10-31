@@ -175,10 +175,10 @@ ul.dropdown-menu{
   height: 40px;
 }
 .banner-slider .slick-prev{
-  right: 75px;
+  right: 57px;
 }
 .banner-slider .slick-next{
-  right: 35px;
+  right: 17px;
 }
 .banner-slider .slick-prev::before{
   content: "\e90c";
@@ -532,12 +532,12 @@ ul.dropdown-menu{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex: 1 0 20%;
   color: #fff;
-  border-right:1px solid #5C5C5C;
-  padding-left: 1.5rem;
+  border-left:1px solid #5C5C5C;
 }
-.enquiry-bar .program-details li:last-child{
+.enquiry-bar .program-details li:first-child, .enquiry-bar .program-details li:last-child{
   border: none;
 }
 .enquiry-bar .program-details li span{
@@ -562,9 +562,9 @@ ul.dropdown-menu{
   font-size: 1.1rem;
   font-weight: 700; 
 }
-.enquire-btn{
+/* .enquire-btn{
   width: 100%;
-}
+} */
 
 .enquire-btn:hover, .enquire-btn:active, .enquire-btn:visited, .enquire-btn:focus-visible{
   background-color:#fff5d6 !important;
@@ -591,15 +591,16 @@ ul.dropdown-menu{
 }
 .stc-det.student-sec.inner-sec{
   left: 60px;
+  top: 85px;
 }
 .stc-det.course-sec.inner-sec{
   top: inherit;
   right: 75px;
-  bottom: 90px;
+  bottom: 50px;
 }
 .app-featurelist{
   position: sticky;
-  top: 75px;
+  top: 74px;
   z-index: 999;
   background: #ffffff;
 }
@@ -624,7 +625,7 @@ ul.dropdown-menu{
 .app-features li{
   list-style: none;
   display: flex;
-  padding: 0 19px;
+  padding: 5px 20px 0;
 }
 .app-features li a{
   text-decoration: none;
@@ -655,7 +656,7 @@ ul.dropdown-menu{
 } */
 
 .enroll-certification{
-    padding: 3rem 0 2rem;
+    padding-top: 4rem;
 }
 .enroll-certification .fintech-certi.hand-tool{
   display: flex;
@@ -771,7 +772,7 @@ ul.dropdown-menu{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding:26px;
+  padding:26px 35px;
   border-radius: 10px;
   background:  #FFF5D6;
   border: 0;
@@ -803,7 +804,7 @@ ul.dropdown-menu{
 .fee-distribution{
   background-color: #F5F5F5;
   border-radius: 5px;
-  padding: 2rem 1rem 3rem;
+  padding: 2rem 1rem 5rem;
   display: flex;
   justify-content: flex-start;
   overflow-x: auto;
