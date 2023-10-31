@@ -186,12 +186,13 @@
                 <img src="assets/images/bene-girl.png" alt="">
                 <ul class="bene-list">
                   <li>Industry-ready programs</li>
-                  <li>100% placement assistance</li>
                   <li>Industry stalwart trainers</li>
+                  <li>Hands-on Live projects</li>
+                  <li>Internationally acclaimed certifications</li>
+                  <li>AI-based interactive LMS</li>
+                  <li>100% placement assistance</li>
                   <li>Lifetime academic support</li>
-                  <li>Hands-on live projects</li>
                   <li>Cutting-edge course curriculum</li>
-                  <li>Globally recognised certifications</li>
                 </ul>
               </div>
           </div>
@@ -448,6 +449,13 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script>
+      if (history.scrollRestoration) {
+          history.scrollRestoration = 'manual';
+      } else {
+          window.onbeforeunload = function () {
+              window.scrollTo(0, 0);
+          }
+      }
       $( document ).ready(function() {
         $('.banner-slider').slick({
           dots: true,

@@ -1,4 +1,5 @@
 // Global Js Start here
+
 $(document).ready(function() {
 	$(document).on("mousedown", ".btn-ripple" , function(e){     
 		var target = e.target;
@@ -42,6 +43,7 @@ $(document).ready(function() {
 	});
 
 // setTimeout(function() { $(".final-announcement").slideUp(500); }, 5000)
+// $('.final-announcement').slideDown(500);
 $('.btclosed').click(function(){
 	$(".final-announcement").slideUp(500);
 });
@@ -54,4 +56,14 @@ $('.btclosed').click(function(){
   // Add slideUp animation to Bootstrap dropdown when collapsing.
   $('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+
+  $(".moretext").hide()
+$('.moreless-button').click(function() {
+	$('.moretext').slideToggle();
+	if ($('.moreless-button').text() == "Read more") {
+	  $(this).text("Read less")
+	} else {
+	  $(this).text("Read more")
+	}
   });
