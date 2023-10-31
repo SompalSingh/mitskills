@@ -62,7 +62,25 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+ 
+.mtsk-minus:before {
+  content: "\e90e";
+}
+.mtsk-duration:before {
+  content: "\e90f";
+}
+.mtsk-fee:before {
+  content: "\e910";
+}
+.mtsk-language:before {
+  content: "\e911";
+}
+.mtsk-plus:before {
+  content: "\e912";
+}
+.mtsk-training:before {
+  content: "\e913";
+}
 .mtsk-download:before {
   content: "\e902";
 }

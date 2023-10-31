@@ -37,7 +37,7 @@ body{background-color:#fff;font-family:var(--font-family-R);font-weight:400;line
 .socials{display:flex;align-items:center;justify-content:center;margin:0 2rem 0 1rem;padding:0 20px;border-left:1px solid #D7D7D7;border-right:1px solid #D7D7D7}
 .socials .socials-links{display:flex;margin:0 12px 0 11px;text-decoration:none;color:var(--text-color);font-size:20px;padding:27px 0;transition:.2s ease-in-out}
 .socials .socials-links:hover{color:var(--hover-color)}
-.mit-button{color:var(--text-color);font-family:var(--font-family-SB);font-size:var(--medium-font-size);font-weight:700;text-transform:uppercase;border-radius:5px;border:none;background:var(--button-bg-color);padding:12px 29px 10px;width:max-content;transition:.2s ease-in-out; white-space:nowrap;}
+.mit-button{color:var(--text-color);font-family:var(--font-family-SB);font-size:1rem;font-weight:700;text-transform:uppercase;border-radius:5px;border:none;background:var(--button-bg-color);padding:12px 29px 10px;width:max-content;transition:.2s ease-in-out; white-space:nowrap;}
 .mit-button:hover, .mit-button:active, .mit-button:visited, .mit-button:focus-visible{color:var(--hover-color) !important;background:var(--text-color) !important}
 ul.dropdown-menu{
   box-shadow:0px 10px 20px -10px rgba(72, 86, 133, 0.25); left: 0;
@@ -103,7 +103,7 @@ ul.dropdown-menu{
 .css-details{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
 }
 .css-details .stc-det{
@@ -146,11 +146,17 @@ ul.dropdown-menu{
   top: 135px;
   right: 0px;
 }
-.banner-img{
+.banner .css-details .banner-img{
   max-width: 588px;
   max-height: 550px;
 }
 
+
+
+.inner-banner .css-details .banner-img{
+  max-width: 417px;
+  max-height: 391px;
+}
 /*********** slider css start here *******************/
 
 .banner-slider .slick-arrow{
@@ -320,7 +326,7 @@ ul.dropdown-menu{
   margin-bottom: 0;
 }
 .skill-story.globalAcc{background-color: transparent;padding: 4rem 0;margin: 0;}
-.cer-slider h2{color: var(--text-color);font-family: var(--font-family-SB);font-size: 38px;font-weight: 700;line-height: 44px}
+.cer-slider h2{color: var(--text-color);font-family: var(--font-family-SB);font-size: 38px;font-weight: 700;line-height: 44px; margin-top: 4.5rem;}
 .certification-carousel{margin:1rem 0 2rem 0;}
 .slick-track .item.slick-slide{
   margin-right: 1.5rem;
@@ -507,9 +513,9 @@ ul.dropdown-menu{
 /**************** Home page Css ends here *****************/
 /**************** Inner page Css start here *****************/
 .inner-banner{
-  /* background-color: #FFF5D6; */
+  background-color: #FFF5D6;
   background-image: inherit;
-  /* padding: 5rem 0 0rem; */
+  padding: 2rem 0 0rem;
 }
 .enquiry-bar{
   background: #222;
@@ -584,11 +590,11 @@ ul.dropdown-menu{
   max-width: 50px;
 }
 .stc-det.student-sec.inner-sec{
-  left: -10px;
+  left: 60px;
 }
 .stc-det.course-sec.inner-sec{
   top: inherit;
-  right: 30px;
+  right: 75px;
   bottom: 90px;
 }
 .app-featurelist{
@@ -765,7 +771,7 @@ ul.dropdown-menu{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding:1.5rem;
+  padding:26px;
   border-radius: 10px;
   background:  #FFF5D6;
   border: 0;
@@ -778,14 +784,14 @@ ul.dropdown-menu{
   font-family:var(--font-family-SB);
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1rem 0;
+  padding: 1rem 0 .5rem;
 }
 .over-card .card-body .card-text{
   color: var(--text-color);
   font-family:var(--font-family-R);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 26px;
 }
 
 .fee-section{
@@ -797,14 +803,17 @@ ul.dropdown-menu{
 .fee-distribution{
   background-color: #F5F5F5;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 2rem 1rem 3rem;
   display: flex;
   justify-content: flex-start;
   overflow-x: auto;
   white-space: nowrap;
 }
 
-
+.fee-distribution .card-body .mit-button{
+  text-transform: capitalize;
+  font-size: 18px;
+}
 .fee-card{
   display: flex;
   flex-direction: column;
@@ -849,7 +858,7 @@ ul.dropdown-menu{
   color: #14142B;
   border-bottom: 1px solid #D2D2D2;
   list-style: none;
-  padding: .5rem 0;
+  padding: 1rem 0;
 }
 .fee-card .card-body .fee-list li:last-child{
   border-bottom: none;
@@ -866,7 +875,7 @@ ul.dropdown-menu{
   font-size: 38px;
   font-weight: 700;
   line-height: 44px;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 .curriculum-accordion{
   padding: 0 0;
@@ -1116,9 +1125,21 @@ ul.dropdown-menu{
   }
 }
 @media (max-width:1399px){
-  .banner-img {
+  .banner .css-details .banner-img {
     max-width: 492px;
   }
+  .inner-banner .css-details .banner-img{
+    max-width: 400px;
+  }
+  .stc-det.student-sec.inner-sec{
+    left: 22px;
+    top: 20%;
+  }
+  .stc-det.course-sec.inner-sec {
+    top: inherit;
+    right: 36px;
+    bottom: 75px;
+}
 }
 @media (max-width:1199px){
  
@@ -1168,6 +1189,16 @@ ul.dropdown-menu{
 .skill-story .with-decades p{font-size: 1rem;}
 }
 @media (max-width:991px){
+
+  .css-details .banner-img {
+    min-width: 390px;
+}
+.stc-det.student-sec.inner-sec {
+  left: 90px;
+}
+.stc-det.course-sec.inner-sec {
+  right: 105px;
+}
   .main-body{
     padding-top: 67px ;
     min-height: calc(100vh - 393px);
@@ -1376,6 +1407,16 @@ background: linear-gradient(to top, #FFFFFF 0%, #FFF5D6 50%);
   .bottom-footer .terms-list ul li a{padding-left:0}  
 }
 @media (max-width: 767px) {
+
+  .css-details .banner-img {
+    min-width: 390px;
+}
+.stc-det.student-sec.inner-sec {
+  left: 10px;
+}
+.stc-det.course-sec.inner-sec {
+  right: 20px;
+}
   .main-body{
     padding-top: 67px;
   }
