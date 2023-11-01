@@ -161,11 +161,9 @@ ul.dropdown-menu{
 }
 
 .inner-banner .css-details .banner-img.pmp-img{
-  position: absolute;
-  bottom: -2px;
-  width: 100%;
+  position: relative;
+  bottom: -3px;
   max-width: 100%;
-  z-index: 1;
 }
 
 /*********** slider css start here *******************/
@@ -523,6 +521,9 @@ ul.dropdown-menu{
   background-image: inherit;
   padding: 2rem 0 0rem;
 }
+.inner-banner.six-banner{
+  padding-top: 0;
+}
 .enquiry-bar{
   background: #222;
   padding: 2rem 1rem;
@@ -589,10 +590,11 @@ ul.dropdown-menu{
   padding-bottom: 2rem;
 }
 .css-details .stc-det.inner-sec{
-  padding: 20px;
-  border-radius: 20px;
+  padding: 16px;
+  border-radius: 16px;
   background: #FFF;
   box-shadow: 0px 34px 53px -4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 .css-details .stc-det.inner-sec img{
   max-width: 50px;
@@ -606,6 +608,15 @@ ul.dropdown-menu{
   right: 75px;
   bottom: 50px;
 }
+
+.stc-det.student-sec.inner-sec.capm-sec{
+  left: 140px;
+}
+.stc-det.course-sec.inner-sec.capm-sec{
+  top: 85px;
+  bottom: inherit;
+}
+
 .app-featurelist{
   position: sticky;
   top: 74px;
@@ -1255,6 +1266,10 @@ margin: 1rem 0;
 .stc-det.course-sec.inner-sec {
   right: 105px;
 }
+.stc-det.course-sec.inner-sec.capm-sec{
+  top: 90px;
+  right: 80px;
+}
   .main-body{
     padding-top: 67px ;
     min-height: calc(100vh - 393px);
@@ -1278,6 +1293,9 @@ background: linear-gradient(to top, #FFFFFF 0%, #FFF5D6 50%);
 }
   .banner.inner-banner{
     margin-bottom: 0;
+  }
+  .inner-banner.six-banner{
+    padding-top: 2rem;
   }
   /* .app-featurelist{
     top: 68px;
@@ -1487,8 +1505,15 @@ background: linear-gradient(to top, #FFFFFF 0%, #FFF5D6 50%);
 .stc-det.student-sec.inner-sec {
   left: 10px;
 }
+.stc-det.student-sec.inner-sec.capm-sec{
+  left: 90px;
+}
 .stc-det.course-sec.inner-sec {
   right: 20px;
+}
+.stc-det.course-sec.inner-sec.capm-sec{
+  top: 50px;
+  right: 50px;
 }
   .main-body{
     padding-top: 67px;
@@ -1554,8 +1579,24 @@ background: linear-gradient(to top, #FFFFFF 0%, #FFF5D6 50%);
     left: -24px;
     top: 20%;
   }
+  .stc-det.student-sec.inner-sec.capm-sec{
+    left: 50px;
+  }
   .stc-det.course-sec.inner-sec{
     right: -24px;
+  }
+  .stc-det.course-sec.inner-sec.capm-sec{
+    right: 16px;
+  }
+
+  .fin-feature .single-fee{
+    padding: 1.5rem;
+  }
+  .fin-feature .single-fee h3{
+    font-size: 28px;
+  }
+  .single-fee .mit-button{
+    margin: 0;
   }
 }
 @media (max-width: 1200px) {}
