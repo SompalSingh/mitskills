@@ -1117,6 +1117,252 @@ margin: 1rem 0;
   width: 700px;
 }
 /**************** Modal Css ends here *****************/
+
+
+
+
+.about-banner{
+  background: #FFF5D6;
+  padding: 4rem 0;
+
+}
+.about-heading{
+  background: url(../images/about-us.png) top left no-repeat;
+  background-position-y: 20px;
+  background-size: 70% 70%;
+}
+.about-heading h2 {
+  color: var(--text-color);
+  font-family: var(--font-family-SB);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.enroll-certification.about-sec{
+  padding: 5rem 0 4rem;
+}
+.about-det{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.enroll-certification.about-sec .drdetails {
+  margin-left: 3rem;
+}
+.enroll-certification.about-sec .drdetails h3 {
+  color: var(--text-color);
+  font-family: var(--font-family-SB);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.enroll-certification.about-sec .drdetails p {
+  color: var(--text-color);
+  font-family: var(--font-family-R);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.be-change{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.be-change p {
+  color: var(--text-color);
+  font-family: var(--font-family-R);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.be-change p strong {
+  font-family: var(--font-family-SB);
+  font-size: 20px;
+}
+.blog-head{
+  background: #FFF5D6;
+  padding: 2rem 0 0;
+}
+.blog-banner{
+  background: url(../images/blog-bannerbg.png) center left no-repeat;
+  align-items: center;
+  display: flex;
+}
+.blog-det{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.enroll-certification.blog-sec{
+  padding: 3rem 0 2rem;
+}
+
+.blog-card{
+  margin:1rem;
+  border: none;
+  border-radius: 5px 5px 0 0;
+}
+.blog-card img{
+  border-radius: 5px 5px 0 0;
+}
+
+.blog-card .card-body {
+  padding: 0;
+  background: #fff;
+  position: relative;
+  border: 0;
+}
+.blog-card .dateTime{
+  color: #777;
+  font-family: var(--font-family-R);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin:16px 0;
+}
+.blog-card .card-title{
+  font-size: 22px;
+  line-height: 32px;
+  white-space: normal;
+  /* margin-bottom: 8px; */
+}
+
+.blog-card .card-text{
+  line-height: 26px;
+  min-height: auto !important;
+  /* margin: 0;   */
+}
+
+.blog-card  .card-button{
+  margin-top: 0;
+}
+.pagination-blog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.pagination-blog .pagination{
+  padding: 0;
+  margin: 0;
+}
+.pagination .page-item{
+  align-items: center;
+  display: flex;
+}
+.pagination .page-item .page-link{
+  align-items: center;
+  display: flex;
+  padding: 16px 13px;
+  max-height: 1rem;
+  border: 0;
+  color: #959595;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 0;
+}
+.pagination .page-item .page-link span{
+  font-size: 12px;
+  font-weight: 900;
+}
+.pagination .page-item .page-link.active{
+  color: #000;
+  background: transparent;
+}
+.pagination .page-item:first-child .page-link{
+  background: #f5f5f5;
+  color: #222;
+}
+.pagination .page-item:last-child .page-link{
+  background: #222;
+  color: #fff;
+}
+
+
+.middle-bg{
+  height: 700px;
+  position: relative;
+  margin-top: -350px;
+  /* margin-bottom: -20px; */
+  z-index: 1;
+  background: url(../images/map.png) center center no-repeat;
+  background-size: cover;
+}
+.contact-box{
+  position: relative;
+  z-index: 2;
+}
+.con-listing{
+  border-bottom: 11px solid #FFAD00;
+}
+
+.con-block{
+  display: flex;
+  padding: 60px;
+  justify-content: space-between;
+  background-color: #222;
+}
+.con-head{
+  background: url(../images/contact-bg.png) top left no-repeat;
+  background-position-y: 30px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.con-block .con-head h2{
+  color: #FFF;
+  font-family:var(--font-family-SB);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+.con-head .con-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.con-head .con-info .con-details{
+  display: flex;
+  align-items: center;
+}
+.con-head .con-info .con-details span{
+  color: #FFAD00;
+}
+
+.con-head .con-info .con-details.mail-details span{
+  font-size: 14px;
+}
+.con-head .con-info .con-details p{
+  margin-bottom: 0;
+  margin-left: 1rem;
+  color: #fff;
+  font-family:var(--font-family-R);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.con-formList{
+  padding: 130px;
+  background: #747474;
+  /* margin-right:calc(-.5 * var(--bs-gutter-x)); */
+}
+.con-formList h2{
+  color: #fff;
+  font-family:var(--font-family-SB);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 155.556% */
+}
+
+.con-formList .con-form span{
+  color: #5C5C5C
+}
 /**************** Inner page Css ends here *****************/
 /************************************************
   Body ends here
@@ -1251,7 +1497,51 @@ margin: 1rem 0;
 .skill-story .with-decades p{font-size: 1rem;}
 }
 @media (max-width:991px){
+  .con-head{
+    min-height: 210px;
+  }
+  .con-formList{
+    padding: 50px;
+  }
+  .middle-bg{
+    margin-top: -450px;
+  }
 
+  .blog-head{
+    padding-top: 3rem;
+  }
+  .blog-banner{
+    background: transparent;
+  }
+  .blog-det{
+    justify-content: center;
+  }
+  .about-banner{
+    padding: 2rem 0;
+  }
+  .background{
+    background: transparent;
+  }
+  .about-heading h2{
+    margin-bottom: 1rem;
+  }
+  .enroll-certification.about-sec{
+    padding: 3rem 0 2rem;
+  }
+  .about-det{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-det img{
+    margin: 0 auto;
+  }
+  .enroll-certification.about-sec .drdetails{
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .be-change{
+    margin-top: 2rem;
+  }
   .banner .css-details .banner-img {
     min-width: 100%;
 }
@@ -1499,6 +1789,10 @@ background: linear-gradient(to top, #FFFFFF 0%, #FFF5D6 50%);
 }
 @media (max-width: 767px) {
 
+  .con-block, .con-formList{
+    padding: 2rem;
+  }
+
   .css-details .banner-img {
     min-width: 390px;
 }
@@ -1564,6 +1858,10 @@ background: linear-gradient(to top, #FFFFFF 0%, #FFF5D6 50%);
 
   .item .cus-card{
     margin: 0;
+  }
+
+  .blog-card {
+    margin: 1rem 0 !important;
   }
   .cer-slider h2{
     font-size: 30px;
