@@ -21,18 +21,23 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown firstNav">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropMenu">
+                <li><a class="dropdown-item" href="ui-ux.html">Advanced Certificate In UI UX</a></li>
                 <li><a class="dropdown-item" href="fintech.html">Fintech</a></li>
                 <li><a class="dropdown-item" href="digital-marketing.html">AI in Digital Marketing</a></li>
-                <li><a class="dropdown-item" href="six-sigma.html">Six Sigma</a></li>
-                <li><a class="dropdown-item" href="pmp.html">PMP certification</a></li>
-                <li><a class="dropdown-item" href="capm.html">CAPM certification</a></li>
-                <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a class="dropdown-item" href="terms-use.html">Terms of Use</a></li>
+                <li><a class="dropdown-item" href="six-sigma.html">Lean Six Sigma (Green + Black Belt)</a></li>
+                <li class="nav-item dropdown secondnav">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">PMI Certification</a>
+                  <ul class="dropdown-menu secondDrop">
+                    <li><a class="dropdown-item" href="pmp.html">PMP certification</a></li>
+                    <li><a class="dropdown-item" href="capm.html">CAPM certification</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
@@ -1153,11 +1158,12 @@
           <div class="col-md-12 col-lg-3 courses-list">
             <h2>Courses</h2>
             <ul>
-              <li><a href="#">Fin Tech</a></li>
-              <li><a href="#">AI in Digital Marketing</a></li>
-              <li><a href="#">Lean Six Sigma (Green + Black Belt)</a></li>
-              <li><a href="#">PMP certification</a></li>
-              <li><a href="#">CAPM certification</a></li>
+              <li><a href="ui-ux.html">Advanced Certificate In UI UX</a></li>
+              <li><a href="fintech.html">Fintech</a></li>
+              <li><a href="digital-marketing.html">AI in Digital Marketing</a></li>
+              <li><a href="six-sigma.html">Lean Six Sigma (Green + Black Belt)</a></li>
+              <li><a href="pmp.html">PMP certification</a></li>
+              <li><a href="capm.html">CAPM certification</a></li>
             </ul>
           </div>
           <div class="col-md-12 col-lg-3 contact-info">
@@ -1169,7 +1175,11 @@
               </div>
               <div class="cc-details mt-3">
                 <span class="mtsk-phone"></span>
-                <p>+91 8483-001-422</p>
+                <p>+91 8483001422, +91 9011834840</p>
+              </div>
+              <div class="cc-details mt-3">
+                <span class="mtsk-location"></span>
+                <p>MIT Alandi Campus, <br> Pune 412105, Maharashtra</p>
               </div>
             </div>
             <div class="cc-list time-list">
@@ -1199,9 +1209,10 @@
                 <span class="input-group-text"><i class="mtsk-cource"></i></span>
                 <select name="select" class="form-control selectpicker" autocomplete="off">
                   <option value="" selected disabled>Course</option>
+                  <option value="1">Advanced Certificate In UI UX</option>
                   <option value="1">Fin Tech</option> 
                   <option value="2">AI in Digital Marketing</option>
-                  <option value="3">Lean Six Sigma</option>
+                  <option value="3">Lean Six Sigma (Green + Black Belt)</option>
                   <option value="4">PMP certification</option>
                   <option value="5">CAPM certification</option>
                 </select>

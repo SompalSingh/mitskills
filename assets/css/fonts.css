@@ -123,3 +123,6 @@
 .mtsk-user:before {
   content: "\e90b";
 }
+.mtsk-location:before {
+  content: "\e914";
+}
