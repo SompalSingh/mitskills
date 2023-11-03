@@ -50,20 +50,34 @@ $('.btclosed').click(function(){
 
  // Add slideDown animation to Bootstrap dropdown when expanding.
  $('.dropdown').on('show.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    $(this).find('.dropdown-menu').first().stop(true, true);
   });
 
   // Add slideUp animation to Bootstrap dropdown when collapsing.
   $('.dropdown').on('hide.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    $(this).find('.dropdown-menu').first().stop(true, true);
   });
 
   $(".moretext").hide()
-$('.moreless-button').click(function() {
-	$('.moretext').slideToggle();
-	if ($('.moreless-button').text() == "Read more") {
-	  $(this).text("Read less")
-	} else {
-	  $(this).text("Read more")
-	}
-  });
+	$('.moreless-button').click(function() {
+		$('.moretext').slideToggle();
+		if ($('.moreless-button').text() == "Read more") {
+		$(this).text("Read less")
+		} else {
+		$(this).text("Read more")
+		}
+	});
+
+
+	// $(".ds-hd-right>li").on("show.bs.dropdown", function (e) {
+	// 	$(this).find(".dropdown-menu").first().stop(true, true).show();
+	// });
+	// $(".ds-hd-right>li").on("hide.bs.dropdown", function (e) {
+	// 	$(this).find(".dropdown-menu").first().stop(true, true).hide();
+	// });
+
+	document.querySelectorAll('.dropdown-menu').forEach(function(element){
+		element.addEventListener('click', function (e) {
+		  e.stopPropagation();
+		});
+	})
