@@ -1212,6 +1212,7 @@ margin: 1rem 0;
   background: #fff;
   position: relative;
   border: 0;
+  cursor: pointer;
 }
 .blog-card .dateTime{
   color: #777;
@@ -1363,6 +1364,79 @@ margin: 1rem 0;
 .con-formList .con-form span{
   color: #5C5C5C
 }
+.blog-det-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+.blog-det-container p{
+  color: #000;
+  font-family:var(--font-family-R);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 2rem;
+}
+
+.blog-det-container h2{
+  color: #000;
+  font-family:var(--font-family-SB);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom:2rem;
+}
+.blog-det-container img{
+  margin-bottom: 2rem;
+}
+.resource-list{
+  border-top: 1px solid #D7D7D7;
+
+}
+
+.blog-details{
+  background: #FFF5D6;
+}
+.green-belt{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.green-belt h2 {
+  color: var(--text-color);
+  font-family: var(--font-family-SB);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.user-details{
+  display: flex;
+  margin-top: 1.5rem;
+}
+.user-details img{
+  margin-right: 1rem;
+}
+.user-details .user-blog{
+  color: #000;
+font-family: var(--font-family-R);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.user-details .user-blog h6{
+font-family: var(--font-family-SB);
+font-weight: 700;
+margin-bottom: 3px;
+}
+.user-details .user-blog p{
+  margin: 0;
+}
 /**************** Inner page Css ends here *****************/
 /************************************************
   Body ends here
@@ -1497,6 +1571,12 @@ margin: 1rem 0;
 .skill-story .with-decades p{font-size: 1rem;}
 }
 @media (max-width:991px){
+  .green-belt{
+    margin: 2rem 0;
+  }
+  .green-belt h2 br{
+    display: none;
+  }
   .con-head{
     min-height: 210px;
   }
